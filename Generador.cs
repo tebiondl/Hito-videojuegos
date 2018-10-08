@@ -16,7 +16,8 @@ public class Generador : MonoBehaviour {
     Vector3 pos2;
     Vector3 pos3;
     Vector3 pos4;
-    
+    Vector3 pos5;
+
 
     // Use this for initialization
     void Start () {
@@ -44,17 +45,20 @@ public class Generador : MonoBehaviour {
         float y3 = Random.Range(0.5f, 6.6f);
         float x4 = Random.Range(-1.43f, 2.39f);
         float y4 = Random.Range(2.86f, 6.6f);
+        float x5 = Random.Range(-1.51f, 2.34f);
+        float y5 = Random.Range(2.8f, 6.6f);
 
         pos = new Vector3(x, y, z);
         pos2 = new Vector3(x2, y2, z);
         pos3 = new Vector3(x3, y3, z);
         pos4 = new Vector3(x4, y4, z);
+        pos5 = new Vector3(x5, y5, z);
 
-        
 
-        
 
-        int w = Random.Range(0, 3);
+
+
+        int w = Random.Range(0, 4);
 
         if (w == 0)
         {
@@ -71,6 +75,10 @@ public class Generador : MonoBehaviour {
         if (w == 3)
         {
             transform.position = pos4;
+        }
+        if (w == 4)
+        {
+            transform.position = pos5;
         }
 
 
